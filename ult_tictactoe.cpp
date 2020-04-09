@@ -410,6 +410,29 @@ void UltTicTacToe::checkWin(char currentPlayer)
       win(currentPlayer);
     }
   }
+
+  // check if entire board is a draw
+
+  bool allTied = true;
+
+  for (int x = 0; x < 3; x++)
+  {
+    for (int y = 0; y < 3; y++)
+    {
+      if (this -> gameBoard[x][y].getBoardStatus() != 'T')
+      {
+        allTied = false;
+      }
+    }
+  }
+
+  if (allTied)
+  {
+    cout << "Darn, a tie! That must've taken awhile!" << endl;
+    this -> setGameStatus("finished");
+  }
+
+
 }
 
 /*
