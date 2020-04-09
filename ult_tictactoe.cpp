@@ -429,7 +429,7 @@ void UltTicTacToe::checkWin(char currentPlayer)
   if (allTied)
   {
     cout << "Darn, a tie! That must've taken awhile!" << endl;
-    std::string finished = "finished"
+    std::string finished = "finished";
     this -> setGameStatus(finished);
   }
 
