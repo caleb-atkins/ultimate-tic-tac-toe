@@ -169,7 +169,7 @@ void UltTicTacToe::swapPlayer()
 }
 
 /*
- * set current player to make a move
+ * make move on gameboard with current player
  *
  * @param UltTicTacToe game - UltTicTacToe object
  * @param char currPlayer - current player
